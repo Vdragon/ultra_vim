@@ -44,7 +44,7 @@ bundle_install() {
 }
 
 # Installation requirements
-check_install {"VIM","Git"}
+check_install {"Vim","Git"}
 
 # Cloning repos
 clone_repo
@@ -52,7 +52,7 @@ clone_repo
 # Installing bundles
 bundle_install
 
-# Configuring VIM
+# Configuring Vim
 config_vim 
 
 echo
