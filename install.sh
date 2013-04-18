@@ -1,5 +1,5 @@
-# Checks whether a command is available
-check_install() {
+# Checks requirements
+depends_on() {
   for i in $@; do
     hash ${i,,} >/dev/null 2>&1 || \
     { echo >&2 "$i not installed. Aborting."; exit 1; }
@@ -43,8 +43,8 @@ config_vim() {
   cp ~/.vim/vimrc ~/.vimrc
 }
 
-# Installation requirements
-check_install {"Vim","Git"}
+# Checking requirements
+depends_on {"Vim","Git"}
 
 # Cloning repos
 clone_repo
