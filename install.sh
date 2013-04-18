@@ -3,7 +3,12 @@ check_install() {
   for i in $@; do
     hash ${i,,} >/dev/null 2>&1 || \
     { echo >&2 "$i not installed. Aborting."; exit 1; }
-  done;
+  done
+}
+
+# Clones GitHub repo
+github_clone() {
+  git clone https://github.com/$1.git $2 || exit 1
 }
 
 # Clones dot_vim and Vundle
@@ -14,17 +19,14 @@ clone_repo() {
     installing. Aborting." && exit 1
   fi
 
-  GITHUB_URI="https://github.com"
-
-  # Cloning config repo
-  git clone $GITHUB_URI/bcbcarl/dot_vim.git ~/.vim || exit 1
+  # Cloning config
+  github_clone bcbcarl/dot_vim ~/.vim
 
   # Cloning Vundle
-  VUNDLE_PATH=~/.vim/bundle/vundle
-  git clone $GITHUB_URI/gmarik/vundle.git $VUNDLE_PATH || exit 1
+  github_clone gmarik/vundle ~/.vim/bundle/vundle
 }
 
-# Generates config
+# Generates config from template
 config_vim() {
   # Installing bundles
   vim -u ~/.vim/vundle.vim +BundleInstall +qall
