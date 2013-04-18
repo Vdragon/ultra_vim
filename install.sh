@@ -12,7 +12,7 @@ github_clone() {
 }
 
 # Clones configs
-clone_conf() {
+clone_config() {
   # Checks whether ~/.vim exists
   if [ -d ~/.vim ]; then
     echo -e "The \033[0;32m~/.vim\033[0m should be removed before \
@@ -25,7 +25,7 @@ clone_conf() {
 }
 
 # Generates configs
-gen_conf() {
+make_config() {
   # Installing bundles
   vim -u ~/.vim/vundle.vim +BundleInstall +qall
 
@@ -42,11 +42,11 @@ gen_conf() {
 }
 
 # Installs configs and plugins
-install_conf() {
-  clone_conf
-  gen_conf 
+install_config() {
+  clone_config
+  make_config
   echo "\nInstallation complete. Enjoy! ;-)\n"
 }
 
 depends_on {"Vim","Git"}
-install_conf
+install_config
