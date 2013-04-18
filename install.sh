@@ -43,9 +43,9 @@ gen_conf() {
 
 # Installs configs and plugins
 install_conf() {
-clone_conf
-gen_conf 
-echo "\nInstallation complete. Enjoy! ;-)\n"
+  clone_conf
+  gen_conf 
+  echo "\nInstallation complete. Enjoy! ;-)\n"
 }
 
 depends_on {"Vim","Git"}
