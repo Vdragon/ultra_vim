@@ -2,14 +2,12 @@
 depends_on() {
   for i in $@; do
     hash ${i,,} >/dev/null 2>&1 || \
-    { echo >&2 "$i not installed. Aborting."; exit 1; }
+    { echo >&2 "$i not installed. Aborting."; exit 1 }
   done
 }
 
 # Clones GitHub repo
-github_clone() {
-  git clone https://github.com/$1.git $2 || exit 1
-}
+github_clone() { git clone https://github.com/$1.git $2 || exit 1 }
 
 # Clones configs
 clone_config() {
