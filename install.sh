@@ -11,20 +11,20 @@ github_clone() {
   git clone https://github.com/$1.git $2 || exit 1
 }
 
-# Clones config from GitHub
+# Clones configs
 clone_conf() {
   # Checks whether ~/.vim exists
   if [ -d ~/.vim ]; then
     echo -e "The \033[0;32m~/.vim\033[0m should be removed before \
-    installing. Aborting." && exit 1
+    installing. Aborting."; exit 1
   fi
 
-  # Cloning config template and Vundle
+  # Cloning configs template and Vundle
   github_clone bcbcarl/dot_vim ~/.vim
   github_clone gmarik/vundle ~/.vim/bundle/vundle
 }
 
-# Generates config from template
+# Generates configs
 gen_conf() {
   # Installing bundles
   vim -u ~/.vim/vundle.vim +BundleInstall +qall
@@ -41,10 +41,10 @@ gen_conf() {
   cp ~/.vim/vimrc ~/.vimrc
 }
 
+# Installs configs and plugins
 install_conf() {
 clone_conf
 gen_conf 
-
 echo "\nInstallation complete. Enjoy! ;-)\n"
 }
 
