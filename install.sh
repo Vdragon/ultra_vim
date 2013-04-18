@@ -24,6 +24,11 @@ clone_repo() {
   git clone $GITHUB_URI/gmarik/vundle.git $VUNDLE_PATH || exit 1
 }
 
+# Clones Vundle bundles
+bundle_install() {
+  vim -u ~/.vim/vundle.vim +BundleInstall +qall
+}
+
 # Generates config
 config_vim() {
   # Backing up ~/.vimrc
@@ -36,11 +41,6 @@ config_vim() {
 
   # Generating ~/.vimrc
   cp ~/.vim/vimrc ~/.vimrc
-}
-
-# Clones Vundle bundles
-bundle_install() {
-  vim -u ~/.vim/vundle.vim +BundleInstall +qall
 }
 
 # Installation requirements
