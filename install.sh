@@ -1,8 +1,8 @@
 # Checks requirements
 depends_on() {
   for i in $@; do
-    hash $i >/dev/null 2>&1 || \
-    { echo >&2 "$i not installed. Aborting."; exit 1 }
+    hash $i >/dev/null 2>&1 || {
+      echo >&2 "$i not installed. Aborting."; exit 1; }
   done
 }
 
