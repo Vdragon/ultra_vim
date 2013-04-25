@@ -7,7 +7,7 @@ depends_on() {
 }
 
 # Clones GitHub repo
-github_clone() { git clone https://github.com/$1.git $2 || exit 1 }
+github_clone() { git clone https://github.com/$1.git $2 || exit 1; }
 
 # Clones configs
 clone_config() {
