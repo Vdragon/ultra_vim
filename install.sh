@@ -1,7 +1,7 @@
 # Checks requirements
 depends_on() {
   for i in $@; do
-    hash ${i,,} >/dev/null 2>&1 || \
+    hash $i >/dev/null 2>&1 || \
     { echo >&2 "$i not installed. Aborting."; exit 1 }
   done
 }
@@ -46,5 +46,5 @@ install_config() {
   echo "\nInstallation complete. Enjoy! ;-)\n"
 }
 
-depends_on {"Vim","Git"}
+depends_on vim git
 install_config
