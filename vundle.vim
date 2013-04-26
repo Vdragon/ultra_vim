@@ -11,7 +11,8 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'Lokaltog/vim-powerline'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+Bundle 'Lokaltog/powerline'
 Bundle 'SirVer/ultisnips'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-fugitive'
