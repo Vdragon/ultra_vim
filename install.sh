@@ -25,7 +25,7 @@ clone_config() {
 # Generates configs
 make_config() {
   # Installing bundles
-  vim -u ~/.vim/vundle.vim +BundleInstall +qall
+  vim -u ~/.vim/vundle.vim +BundleInstall +qall >&2
 
   # Backing up ~/.vimrc
   if [ -f ~/.vimrc ]; then
