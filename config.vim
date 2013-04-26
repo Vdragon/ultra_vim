@@ -2,8 +2,10 @@
 " Color
 " ---------------
 syntax enable
-set t_Co=256
-colorscheme hybrid
+if &term =~ '256color'
+  set t_ut=        " Disable BCE (Background Color Erase)
+  colorscheme hybrid
+endif
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
