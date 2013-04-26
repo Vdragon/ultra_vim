@@ -14,6 +14,7 @@ nmap <Leader>gx :wincmd h<CR>:q<CR>
 " ---------------
 if &term =~ '256color'
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+  set noshowmode
 endif
 
 " ---------------
