@@ -17,7 +17,7 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 * [Vim](http://www.vim.org/) - Vim is a highly configurable text editor built to enable efficient text editing.
 * [Git](http://git-scm.com/) - Git is a free and open source distributed version control system.
 
-## Plugin List
+## Plugins
 
 * [powerline](https://github.com/Lokaltog/powerline) - The ultimate statusline/prompt utility.
 * [ultisnips](https://github.com/SirVer/ultisnips) - Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
