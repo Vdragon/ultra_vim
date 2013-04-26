@@ -10,6 +10,13 @@ nmap <Leader>gd :Gdiff<CR>
 nmap <Leader>gx :wincmd h<CR>:q<CR>
 
 " ---------------
+" Powerline
+" ---------------
+if &term =~ '256color'
+  set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+endif
+
+" ---------------
 " vim-markdown
 " ---------------
 let g:vim_markdown_folding_disabled=1
