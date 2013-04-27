@@ -25,3 +25,7 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 * [vim-fugitive](https://github.com/tpope/vim-fugitive) - fugitive.vim: a Git wrapper so awesome, it should be illegal
 * [vim-surround](https://github.com/tpope/vim-surround) - surround.vim: quoting/parenthesizing made simple
 * [vim-hybrid](https://github.com/w0ng/vim-hybrid) - A dark colour scheme for Vim & gVim
+
+## License
+
+This Vim configuration is released under the [BSD license](LICENSE).
