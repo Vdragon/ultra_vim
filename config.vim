@@ -1,10 +1,15 @@
 " ---------------
 " Color
 " ---------------
-syntax enable
-if &term =~ '256color'
-  set t_ut=        " Disable BCE (Background Color Erase)
+if &t_Co > 2 || has("gui_running")
+  syntax enable
   colorscheme hybrid
+  set hlsearch
+endif
+
+" Disable BCE (Background Color Erase)
+if &term =~ 'xterm-256color'
+  set t_ut=
 endif
 
 " -----------------------------
@@ -52,6 +57,5 @@ set expandtab
 set ignorecase " Case insensitive search
 set smartcase  " Non-case sensitive search
 set incsearch
-set hlsearch
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
   \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
