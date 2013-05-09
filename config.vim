@@ -6,7 +6,6 @@ if &t_Co > 2 || has("gui_running")
   colorscheme hybrid
   set hlsearch
 endif
-
 " Disable BCE (Background Color Erase)
 if &term =~ 'xterm-256color'
   set t_ut=
