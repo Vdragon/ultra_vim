@@ -1,11 +1,12 @@
 " ---------------
 " Color
 " ---------------
-if &term =~ '256color' || has("gui_running")
+set term=xterm-256color
+set t_ut=          " Disable BCE (Background Color Erase)
+if &t_Co > 2 || has("gui_running")
   syntax enable
   colorscheme hybrid
   set hlsearch
-  set t_ut=        " Disable BCE (Background Color Erase)
 endif
 
 " -----------------------------
