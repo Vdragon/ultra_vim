@@ -12,7 +12,7 @@ nmap <Leader>gx :wincmd h<CR>:q<CR>
 " ---------------
 " Powerline
 " ---------------
-if &t_Co > 2 || has("gui_running")
+if &term ~= 'xterm-256color' || has("gui_running")
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   set noshowmode
 endif
