@@ -3,7 +3,7 @@
 " ---------------
 set term=xterm-256color
 set t_ut=          " Disable BCE (Background Color Erase)
-if &t_Co >= 2 || has("gui_running")
+if &t_Co > 2 || has("gui_running")
   syntax enable
   set hlsearch
 endif
