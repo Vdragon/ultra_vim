@@ -6,6 +6,7 @@ set t_ut=          " Disable BCE (Background Color Erase)
 if &t_Co > 2 || has("gui_running")
   syntax enable
   set hlsearch
+  highlight ColorColumn ctermbg=7
 endif
 if &t_Co >= 256 || has("gui_running")
   colorscheme hybrid
