@@ -11,6 +11,10 @@ endif
 if &t_Co >= 256 || has("gui_running")
   colorscheme hybrid
 endif
+if has("gui_running")
+  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14
+  highlight ColorColumn guibg=LightGray
+endif
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
