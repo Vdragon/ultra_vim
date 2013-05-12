@@ -26,4 +26,4 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 
 ## License
 
-This Vim configuration is released under the [MIT license](LICENSE).
+This Vim configuration is based on [mutewinter/dot_vim](https://github.com/mutewinter/dot_vim) and released under the [MIT license](LICENSE).
