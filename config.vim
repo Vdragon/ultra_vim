@@ -22,6 +22,7 @@ if exists('term_color')
 endif
 
 if exists('full_color')
+  highlight CursorLine guibg=Blue guifg=White
   highlight ColorColumn ctermbg=235 guibg=#2c2d27
 endif
 
