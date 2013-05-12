@@ -16,7 +16,7 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 
 You must have both [Vim 7.3+](http://www.vim.org/) and [Git](http://git-scm.com/) installed.
 
-(Optional) [Powerline](https://github.com/Lokaltog/powerline) is a statusline utility which requires a Vim version with Python support compiled in.
+(Optional) Vim 7.3.661+ with Python support is recommanded to enable [Powerline](https://github.com/Lokaltog/powerline) statusline.
 
 ## Color Scheme
 
