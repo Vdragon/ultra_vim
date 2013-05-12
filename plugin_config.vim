@@ -12,7 +12,7 @@ nmap <Leader>gx :wincmd h<CR>:q<CR>
 " ---------------
 " Powerline
 " ---------------
-if g:color == 1
+if exists('full_color')
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
   set noshowmode
