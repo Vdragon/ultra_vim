@@ -43,6 +43,7 @@ let &colorcolumn=join(range(71,999),",")  " Set column ruler to 70
 set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
 set wildmode=list:longest,full
+set clipboard=unnamedplus
 
 " ---------------
 " Text Format
