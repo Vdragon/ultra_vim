@@ -24,7 +24,7 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 * [vim-markdown](https://github.com/plasticboy/vim-markdown) - Markdown Vim Mode
 * [vim-fugitive](https://github.com/tpope/vim-fugitive) - fugitive.vim: a Git wrapper so awesome, it should be illegal
 * [vim-surround](https://github.com/tpope/vim-surround) - surround.vim: quoting/parenthesizing made simple
-* [vim-hybrid](https://github.com/w0ng/vim-hybrid) - A dark colour scheme for Vim & gVim
+* [molokai](https://github.com/tomasr/molokai) - Molokai color scheme for Vim
 
 ## License
 
