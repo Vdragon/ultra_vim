@@ -7,7 +7,6 @@ if &t_Co >= 8 || has("gui_running")
   syntax enable
   set hlsearch
   colorscheme molokai
-  set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14
 endif
 
 " -----------------------------
