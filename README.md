@@ -1,5 +1,7 @@
 ## Installation
 
+You can install this Vim configuration via [curl](#via-curl) or [wget](#via-wget).
+
 ### via curl
 
 ```bash
