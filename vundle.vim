@@ -18,7 +18,6 @@ endif
 
 Bundle 'SirVer/ultisnips'
 Bundle 'plasticboy/vim-markdown'
-Bundle 'tpope/vim-surround'
 Bundle 'tomasr/molokai'
 " ...
 
