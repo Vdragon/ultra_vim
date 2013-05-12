@@ -14,10 +14,9 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 
 ## Requirements
 
-You must have both [Vim](http://www.vim.org/) and [Git](http://git-scm.com/) installed.
+You must have both [Vim 7.3+](http://www.vim.org/) and [Git](http://git-scm.com/) installed.
 
-(Optional) You may want to use [a Vim version with Python support](https://powerline.readthedocs.org/en/latest/overview.html#requirements)
-for better experience.
+(Optional) [Powerline](https://github.com/Lokaltog/powerline) is a statusline utility which requires a Vim version with Python support compiled in.
 
 ## Color Scheme
 
