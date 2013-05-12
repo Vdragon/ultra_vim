@@ -1,5 +1,5 @@
 " ---------------
-" Powerline
+" powerline
 " ---------------
 if exists('python_support') && exists('full_color')
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
