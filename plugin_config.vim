@@ -12,7 +12,7 @@ nmap <Leader>gx :wincmd h<CR>:q<CR>
 " ---------------
 " Powerline
 " ---------------
-if &term =~ '256color' || has("gui_running")
+if g:color == 1
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 13
   set noshowmode
