@@ -13,10 +13,15 @@ endif
 " ---------------
 " UI
 " ---------------
-if g:color == 1
+if exists('term_color')
   syntax enable
+  set hlsearch
   colorscheme molokai
-  highlight CursorLine ctermbg=235 guibg=#2c2d27
+  highlight CursorLine ctermbg=Blue ctermfg=White
+  highlight ColorColumn ctermbg=Cyan
+endif
+
+if exists('full_color')
   highlight ColorColumn ctermbg=235 guibg=#2c2d27
 endif
 
@@ -49,10 +54,6 @@ set expandtab
 " ---------------
 " Searching
 " ---------------
-if g:color == 1
-  set hlsearch
-endif
-
 set ignorecase " Case insensitive search
 set smartcase  " Non-case sensitive search
 set incsearch
