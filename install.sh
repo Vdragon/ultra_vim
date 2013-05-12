@@ -20,6 +20,9 @@ clone_config() {
   # Cloning configs template and Vundle
   github_clone bcbcarl/dot_vim ~/.vim
   github_clone gmarik/vundle ~/.vim/bundle/vundle
+
+  # Cloning DejaVu Sans Mono for Powerline
+  github_clone bcbcarl/dejavu-sans-mono-powerline ~/.fonts/DejaVuSansMono
 }
 
 # Generates configs
@@ -37,6 +40,9 @@ make_config() {
 
   # Generating ~/.vimrc
   cp ~/.vim/vimrc ~/.vimrc
+
+  # Update fonts for Powerline
+  fc-cache -fv ~/.fonts
 }
 
 # Installs configs and plugins
