@@ -19,11 +19,14 @@ if exists('term_color')
   colorscheme molokai
   highlight CursorLine ctermbg=Blue ctermfg=White
   highlight ColorColumn ctermbg=Cyan
+  highlight TrailSpace ctermbg=Red
+  match TrailSpace /\s\+$/
 endif
 
 if exists('full_color')
   highlight CursorLine ctermbg=235 guibg=#2c2d27 guifg=White
   highlight ColorColumn ctermbg=235 guibg=#2c2d27
+  highlight TrailSpace guibg=DarkRed
 endif
 
 set ruler          " Ruler on
