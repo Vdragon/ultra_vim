@@ -27,4 +27,4 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 
 ## License
 
-This Vim configuration is released under the [BSD license](LICENSE).
+This Vim configuration is released under the [MIT license](LICENSE).
