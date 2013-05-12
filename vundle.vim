@@ -16,7 +16,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'w0ng/vim-hybrid'
+Bundle 'tomasr/molokai'
 " ...
 
 filetype plugin indent on     " required!
