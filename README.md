@@ -14,8 +14,10 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 
 ## Requirements
 
-* [Vim](http://www.vim.org/) - Vim is a highly configurable text editor built to enable efficient text editing.
-* [Git](http://git-scm.com/) - Git is a free and open source distributed version control system.
+You must have both [Vim](http://www.vim.org/) and [Git](http://git-scm.com/) installed.
+
+(Optional) You may want to use [a Vim version with Python support](https://powerline.readthedocs.org/en/latest/overview.html#requirements)
+for better experience.
 
 ## Color Scheme
 
