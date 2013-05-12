@@ -15,6 +15,4 @@ if has("autocmd")
   " Highlight unwanted trailing spaces in red.
   highlight ExtraWhitespace ctermbg=Red guibg=Red
   match ExtraWhitespace /\s\+$/
-  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-  autocmd InsertLeave * redraw!
 endif
