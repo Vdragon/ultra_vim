@@ -4,7 +4,7 @@ if !(&term=~'256color') && !has('gui_running')
   set t_ut=          " Disable BCE (Background Color Erase)
 endif
 
-" Terminal color support
+" Basic color support
 if &t_Co >= 8 || has('gui_running')
   let g:term_color=1
 endif
