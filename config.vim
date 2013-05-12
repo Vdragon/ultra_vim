@@ -41,9 +41,11 @@ let &colorcolumn=join(range(71,999),",")  " Set column ruler to 70
 " Behaviors
 " ---------------
 set autoread           " Automatically reload changes if detected
-set wildmenu           " Turn on WiLd menu
-set wildmode=list:longest,full
-set clipboard=unnamedplus
+set wildmenu wildmode=list:longest,full  " Turn on wild menu
+
+if has('xterm_clipboard')
+  set clipboard=unnamedplus  " X11-clipboard support
+endif
 
 " ---------------
 " Text Format
