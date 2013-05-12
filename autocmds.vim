@@ -11,4 +11,10 @@ if has("autocmd")
     \ if line("'\"") > 1 && line ("'\"") <= line("$") |
     \   exe "normal! g`\"" |
     \ endif
+
+  " Highlight unwanted trailing spaces in red.
+  highlight ExtraWhitespace ctermbg=Red guibg=Red
+  match ExtraWhitespace /\s\+$/
+  autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+  autocmd InsertLeave * redraw!
 endif
