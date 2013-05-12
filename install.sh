@@ -13,8 +13,7 @@ github_clone() { git clone https://github.com/$1.git $2 || exit 1; }
 clone_config() {
   # Checks whether ~/.vim exists
   if [ -d ~/.vim ]; then
-    echo -e "The \033[0;32m~/.vim\033[0m should be removed before \
-    installing. Aborting."; exit 1
+    echo -e "The \033[0;32m~/.vim\033[0m should be removed before installing. Aborting."; exit 1
   fi
 
   # Cloning configs template and Vundle
