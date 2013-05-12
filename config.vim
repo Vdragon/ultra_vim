@@ -3,17 +3,11 @@
 " ---------------
 set term=xterm-256color
 set t_ut=          " Disable BCE (Background Color Erase)
-if &t_Co > 2 || has("gui_running")
+if &t_Co >= 8 || has("gui_running")
   syntax enable
   set hlsearch
-  highlight ColorColumn ctermbg=7
-endif
-if &t_Co >= 256 || has("gui_running")
-  colorscheme hybrid
-endif
-if has("gui_running")
+  colorscheme molokai
   set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 14
-  highlight ColorColumn guibg=LightGray
 endif
 
 " -----------------------------
@@ -37,12 +31,19 @@ set nowrap         " Line wrapping off
 set laststatus=2   " Always show the statusline
 set encoding=utf-8
 set title          " Set the title of the window in the terminal to the file
+" Highlight current line
+set cursorline
+highlight CursorLine ctermbg=235 guibg=#2c2d27
+" Set column ruler to 70
+let &colorcolumn=join(range(71,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
 
 " ---------------
 " Behaviors
 " ---------------
 set autoread           " Automatically reload changes if detected
 set wildmenu           " Turn on WiLd menu
+set wildmode=list:longest,full
 
 " ---------------
 " Text Format
@@ -63,3 +64,8 @@ set smartcase  " Non-case sensitive search
 set incsearch
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
   \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
+
+" ---------------
+" Visual
+" ---------------
+set list listchars=tab:⁞—,extends:»,precedes:«
