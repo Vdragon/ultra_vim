@@ -22,7 +22,6 @@ wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/instal
 * [powerline](https://github.com/Lokaltog/powerline) - The ultimate statusline/prompt utility.
 * [ultisnips](https://github.com/SirVer/ultisnips) - Official Mirror of UltiSnips trunk on LaunchPad. Send pull requests to SirVer/ultisnips!
 * [vim-markdown](https://github.com/plasticboy/vim-markdown) - Markdown Vim Mode
-* [vim-surround](https://github.com/tpope/vim-surround) - surround.vim: quoting/parenthesizing made simple
 * [molokai](https://github.com/tomasr/molokai) - Molokai color scheme for Vim
 
 ## License
