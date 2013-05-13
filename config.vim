@@ -52,8 +52,8 @@ endif
 " Text Format
 " ---------------
 set tabstop=2
-set backspace=2  " Delete everything with backspace
-set shiftwidth=2 " Tabs under smart indent
+set backspace=2    " Delete everything with backspace
+set shiftwidth=2   " Tabs under smart indent
 set cindent
 set autoindent
 set smarttab
@@ -62,8 +62,8 @@ set expandtab
 " ---------------
 " Searching
 " ---------------
-set ignorecase " Case insensitive search
-set smartcase  " Non-case sensitive search
+set ignorecase     " Case insensitive search
+set smartcase      " Non-case sensitive search
 set incsearch
 set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
   \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
