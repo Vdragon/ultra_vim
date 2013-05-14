@@ -17,6 +17,7 @@ endif
 if &t_Co > 2 || has("gui_running")
   syntax enable
   set hlsearch
+  set guifont=DejaVu_Sans_Mono_for_Powerline:h14
   colorscheme molokai
   highlight TrailSpace guibg=Magenta
   match TrailSpace /\s\+$/
