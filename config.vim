@@ -1,63 +1,33 @@
-" -----------------------------
-" Backups, Tmp Files, and Undo
-" -----------------------------
-set backup
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" Backups and temp files
 set backupdir=~/.vim/.backup
 set directory=~/.vim/.tmp
+set backup
 
+" Persistent undo
 if has('persistent_undo')
   set undofile
   set undodir=~/.vim/.undo
 endif
 
-" ---------------
-" UI
-" ---------------
-if exists('term_color')
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
   syntax enable
   set hlsearch
   colorscheme molokai
-  highlight CursorLine ctermbg=Blue ctermfg=White
-  highlight ColorColumn ctermbg=Cyan
-  highlight TrailSpace ctermbg=Red
+  highlight TrailSpace guibg=Magenta
   match TrailSpace /\s\+$/
 endif
-
-if exists('full_color')
-  highlight CursorLine ctermbg=235 guibg=#2c2d27 guifg=White
-  highlight ColorColumn ctermbg=235 guibg=#2c2d27
-  highlight TrailSpace guibg=DarkRed
-endif
-
-set ruler          " Ruler on
-set number         " Line numbers on
-set nowrap         " Line wrapping off
-set laststatus=2   " Always show the statusline
-set encoding=utf-8 " UTF-8 encoding
-set cursorline     " Highlight current line
-let &colorcolumn=join(range(71,999),",")  " Set column ruler to 70
 
 " ---------------
 " Behaviors
 " ---------------
-set autoread       " Automatically reload changes if detected
-set wildmenu wildmode=list:longest,full  " Turn on wild menu
-
-" X11-clipboard support
-if has('xterm_clipboard')
-  set clipboard=unnamedplus
-endif
-
-" ---------------
-" Text Format
-" ---------------
-set tabstop=2
-set backspace=2    " Delete everything with backspace
-set shiftwidth=2   " Tabs under smart indent
-set cindent
-set autoindent
-set smarttab
-set expandtab
+set ruler          " show the cursor position all the time
+set autoread       " automatically reload changes if detected
+set wildmenu wildmode=list:longest,full  " turn on wild menu
 
 " ---------------
 " Searching
@@ -69,6 +39,20 @@ set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
   \.sass-cache,*.class,*.scssc,*.cssc,sprockets%*,*.lessc
 
 " ---------------
+" Text Format
+" ---------------
+set tabstop=2
+set backspace=2    " Delete everything with backspace
+set shiftwidth=2   " Tabs under smart indent
+set smarttab
+set expandtab
+set number         " Line numbers on
+set nowrap         " Line wrapping off
+set laststatus=2   " Always show the statusline
+set cursorline     " Highlight current line
+let &colorcolumn=join(range(71,999),",")  " Set column ruler to 70
+
+" ---------------
 " Visual
 " ---------------
-set list listchars=tab:⁞—,extends:»,precedes:«
+set list listchars=tab:——,extends:»,precedes:«
