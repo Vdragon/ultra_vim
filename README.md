@@ -1,4 +1,8 @@
 # Welcome to Ultra VIM (tentative)
+
+This project provides a powerful, flexible Vim configurations and currently under heavy development.
+
+## Table of Contents
 * [Installation](#installation)
 * [Requirements](#requirements)
 * [Color Scheme](#color-scheme)
