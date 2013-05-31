@@ -1,3 +1,10 @@
+# Welcome to Ultra VIM
+* [Installation](#installation)
+* [Requirements](#requirements)
+* [Color Scheme](#color-scheme)
+* [Plugins](#plugins)
+* [License](#license)
+
 ## Installation
 
 You can install this Vim configuration via [curl](#via-curl) or [wget](#via-wget).
