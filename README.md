@@ -16,13 +16,13 @@ You can install this Vim configuration via [curl](#via-curl) or [wget](#via-wget
 ### via curl
 
 ```bash
-curl -L https://github.com/bcbcarl/dot_vim/raw/master/install.sh | sh
+curl -L https://github.com/bcbcarl/ultra_vim/raw/master/install.sh | sh
 ```
 
 ### via wget
 
 ```bash
-wget --no-check-certificate https://github.com/bcbcarl/dot_vim/raw/master/install.sh -O - | sh
+wget --no-check-certificate https://github.com/bcbcarl/ultra_vim/raw/master/install.sh -O - | sh
 ```
 
 ## Requirements
