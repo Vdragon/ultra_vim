@@ -53,8 +53,6 @@ endif
 set tabstop=2
 set backspace=2    " Delete everything with backspace
 set shiftwidth=2   " Tabs under smart indent
-set cindent
-set autoindent
 set smarttab
 set expandtab
 
