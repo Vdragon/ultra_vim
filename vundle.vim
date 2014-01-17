@@ -11,14 +11,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-if has('python') || has('python3')
-  let g:python_support=1
-  Bundle 'Lokaltog/powerline'
-endif
-
-Bundle 'SirVer/ultisnips'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'tomasr/molokai'
 " ...
 
 filetype plugin indent on     " required!

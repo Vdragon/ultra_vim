@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Checks requirements
 depends_on() {
   for i in $@; do

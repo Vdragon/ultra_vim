@@ -16,7 +16,6 @@ endif
 if exists('term_color')
   syntax enable
   set hlsearch
-  colorscheme molokai
   highlight CursorLine ctermbg=Blue ctermfg=White
   highlight ColorColumn ctermbg=Cyan
   highlight TrailSpace ctermbg=Red
@@ -71,4 +70,4 @@ set wildignore+=*.o,*.obj,*.exe,*.so,*.dll,*.pyc,.svn,.hg,.bzr,.git,
 " ---------------
 " Visual
 " ---------------
-set list listchars=tab:⁞—,extends:»,precedes:«
+set list listchars=tab:——,extends:>,precedes:<
