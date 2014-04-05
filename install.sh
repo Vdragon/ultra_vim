@@ -15,11 +15,11 @@ github_clone() { git clone https://github.com/$1.git $2 || exit 1; }
 clone_config() {
   # Checks whether ~/.vim exists
   if [ -d ~/.vim ]; then
-    echo -e "The \033[0;32m~/.vim\033[0m should be removed before installing. Aborting."; exit 1
+    echo -e "The ~/.vim should be removed before installing. Aborting."; exit 1
   fi
 
   # Cloning configs template and Vundle
-  github_clone bcbcarl/dot_vim ~/.vim
+  github_clone bcbcarl/ultra_vim ~/.vim
   github_clone gmarik/vundle ~/.vim/bundle/vundle
 }
 
@@ -31,8 +31,8 @@ make_config() {
   # Backing up ~/.vimrc
   if [ -f ~/.vimrc ]; then
     TIMESTAMP=`date +%s`
-    echo -e "\033[0;32m~/.vimrc\033[0m found."
-    echo -e "Backing up to \033[0;32m~/.vimrc_$TIMESTAMP\033[0m"
+    echo -e "~/.vimrc found."
+    echo -e "Backing up to ~/.vimrc_$TIMESTAMP"
     mv ~/.vimrc ~/.vimrc_$TIMESTAMP
   fi
 
